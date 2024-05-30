@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    visibility: hidden;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.button1 {
+    position: fixed;
+}
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    animation: float 4s infinite;
+}
+@keyframes float {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+}
